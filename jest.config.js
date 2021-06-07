@@ -4,7 +4,11 @@ module.exports = {
         "^~/(.*)$": "<rootDir>/src/$1",
     },
 
-    modulePathIgnorePatterns: ["<rootDir>/node_modules", "<rootDir>/dist"],
+    modulePathIgnorePatterns: [
+        "<rootDir>/node_modules",
+        "<rootDir>/dist",
+        "<rootDir>/cypress",
+    ],
 
     testURL: "http://localhost",
 
